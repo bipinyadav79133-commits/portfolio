@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bipin Kumar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#0a192f);
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(15,23,42,0.95);
+    backdrop-filter:blur(10px);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero-text span{
+    color:#38bdf8;
+    text-shadow:0 0 10px #38bdf8;
+}
+
+.hero-text h3{
+    margin-bottom:20px;
+    color:#cbd5e1;
+}
+
+.hero-text p{
+    line-height:1.8;
+    color:#d1d5db;
+    margin-bottom:25px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.profile-img{
+    width:380px;
+    height:380px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+    box-shadow:
+    0 0 25px rgba(56,189,248,.6),
+    0 0 50px rgba(56,189,248,.3);
+    animation:float 4s ease-in-out infinite;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    margin-right:10px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
+}
+
+@media(max-width:768px){
+
+.hero{
+    text-align:center;
+    padding-top:120px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+.profile-img{
+    width:250px;
+    height:250px;
+}
+
+.nav-links{
+    gap:12px;
+    font-size:14px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Bipin Kumar</div>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>Hi, I'm <span>Bipin Kumar</span></h1>
+
+        <h3>B.Tech Computer Science Engineering Student</h3>
+
+        <p>
+            I'm Bipin Kumar, a B.Tech Computer Science Engineering student at
+            SISTec Ratibad, Bhopal. I am passionate about software development,
+            web technologies, and problem-solving. I enjoy building practical
+            projects and continuously improving my technical skills.
+        </p>
+
+        <a href="assets/Bipin_Kumar_Resume_Updated-1.pdf" download class="btn">
+            Download Resume
+        </a>
+
+        <a href="#contact" class="btn">
+            Contact Me
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Bipin Kumar" class="profile-img">
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+        <p>
+            Motivated and enthusiastic Computer Science Engineering student
+            with strong interest in programming, software development,
+            problem-solving and modern web technologies.
+        </p>
+    </div>
+
+</section>
+
+<section id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+        <h3>B.Tech - Computer Science Engineering</h3>
+        <p>SISTec Ratibad, Bhopal</p>
+        <p>2024 – 2028 | CGPA: 6.19</p>
+    </div>
+
+    <div class="card">
+        <h3>Class 12th</h3>
+        <p>BSEB Board</p>
+        <p>2024 | 79.6%</p>
+    </div>
+
+    <div class="card">
+        <h3>Class 10th</h3>
+        <p>BSEB Board</p>
+        <p>2021 | 60%</p>
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill-card">C</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">Git</div>
+        <div class="skill-card">AWS Basics</div>
+        <div class="skill-card">Linux Basics</div>
+    </div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>Quiz Game With Timer</h3>
+            <p>
+                Developed a quiz application with timer functionality,
+                score calculation and multiple-choice questions.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                Designed and developed a responsive portfolio website
+                using HTML, CSS and JavaScript.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="card">
+        <ul>
+            <li>AWS Cloud Practitioner</li>
+            <li>Cisco C++ Essentials 1</li>
+            <li>Cisco C++ Essentials 2</li>
+            <li>Salesforce Trailhead</li>
+        </ul>
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>📍 Bhopal, Madhya Pradesh</p>
+    <p>📞 +91 89998 16934</p>
+    <p>📧 bipinyadav79133@gmail.com</p>
+    <p>💼 LinkedIn: linkedin.com/in/bipin-kumar</p>
+
+</section>
+
+<footer>
+    <p>©️ 2026 Bipin Kumar. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
